@@ -1,12 +1,12 @@
 
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { axios } from 'react-router-dom';
 
 
 function Home() {
-  
     return (
-        <div className='container-fluid'>
+        <div className='container-fluid' style={{marginTop: "30px", textAlign: "center" , background: "#ce0033"}}>
             <div className='row'>
                 <div className='col-md-12'>
                     <div className='card'>
@@ -18,13 +18,24 @@ function Home() {
                         </h4>
                     </div>
                 </div>
-                <div className='card-body'></div>
+                <div className='card-body'>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nom Prenom</th>
+                            <th>Telephone</th>
+                            <th>Email</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </div>
             </div>
         </div>
             
-    </div >
-        
-    );
+    </div > );
 }
-
 export default Home;
